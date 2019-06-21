@@ -143,6 +143,9 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 3rem;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -162,6 +165,20 @@ img {
     max-width: 90%;
   }
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: #d1e0eb;
+}
 footer {
   background-color: #0c3c60;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.footer-nav {
+  font-size: 1.5rem;
+  color: white;
 }
