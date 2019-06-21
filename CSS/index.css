@@ -176,9 +176,31 @@ footer {
   background-color: #0c3c60;
   display: flex;
   justify-content: space-around;
-  padding: 3rem;
+  padding: 2.8rem;
 }
-.footer-nav {
+footer .footer-links {
+  padding: 8px;
   font-size: 1.5rem;
   color: white;
+}
+footer .footer-social {
+  padding: 8px;
+  font-size: 1.5rem;
+}
+footer .footer-buttons {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-buttons .donate,
+footer .footer-buttons .contact {
+  background-color: #20ce88;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  width: 90px;
+  height: 30px;
+  font-size: 1.5rem;
+}
+footer .footer-buttons .donate {
+  margin-top: 20px;
 }
