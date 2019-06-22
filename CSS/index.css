@@ -211,26 +211,50 @@ footer .footer-buttons .donate-btn {
 }
 .tabs {
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tabs .tab-items {
+  width: 100%;
+  padding-top: 10px;
+  border: 2px solid #d1e0eb;
+}
+.tabs .tab-item {
+  display: none;
+}
+.tabs .tab-item-selected {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  padding-top: 60px;
+  justify-content: space-around;
+  padding: 20px;
+}
+.tabs .tab-item-selected .tab-text {
+  max-width: 75%;
+  padding-left: 20px;
 }
 .tabs .tab-links {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #d1e0eb;
 }
-.tabs .tab-items {
-  display: flex;
+.tabs .tab-link {
+  padding: 20px 25px;
+  font-size: 2.2rem;
+  background-color: #d1e0eb;
+  border-right: 1px solid white;
+  width: 100%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
 }
-.tabs .tab-items .tab-item {
-  display: none;
+.tabs .tab-link:hover {
+  background-color: #d1e0eb;
 }
-.tabs .tab-items .tab-item-selected {
-  display: block;
+.tabs .tab-link-selected {
+  border-right: 1px solid #d1e0eb;
+  background-color: white;
+  color: black;
 }
-.tabs .tab-items .tab-img {
-  width: 300px;
-  height: 200px;
+.tabs .tab-link-selected:hover {
+  background-color: white;
 }
