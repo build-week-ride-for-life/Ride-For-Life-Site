@@ -218,6 +218,7 @@ footer .footer-buttons .donate-btn {
   width: 100%;
   padding-top: 10px;
   border: 2px solid #d1e0eb;
+  height: 350px;
 }
 .tabs .tab-item {
   display: none;
@@ -251,6 +252,7 @@ footer .footer-buttons .donate-btn {
   background-color: #d1e0eb;
 }
 .tabs .tab-link-selected {
+  z-index: 2;
   border-right: 1px solid #d1e0eb;
   background-color: white;
   color: black;
