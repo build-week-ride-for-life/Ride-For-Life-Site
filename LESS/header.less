@@ -1,4 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
 nav {
     display: flex;
     flex-direction: column;
+    background-color: @header-bg;
+
+    a {
+        color: black;
+        margin: 10px 0px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: red;
+        color: white;
+        }
+    }
 }
