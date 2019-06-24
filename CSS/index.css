@@ -223,7 +223,7 @@ header .hamburger-icon {
   font-size: 2rem;
   flex-grow: 1;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 header .header-text {
   color: white;
@@ -252,14 +252,15 @@ header .header-text h1 {
 }
 .header-socials {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 20%;
   flex-shrink: 1;
-  margin-right: 7%;
+  margin-right: 4%;
 }
 .header-socials .fa {
   border-radius: 50%;
   padding: 5%;
+  margin: 0 2%;
 }
 .header-socials .fa-facebook {
   padding: 5% 6%;
