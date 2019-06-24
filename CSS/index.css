@@ -169,9 +169,6 @@ a {
   text-decoration: none;
   color: white;
 }
-a:visited {
-  color: #d1e0eb;
-}
 footer {
   background-color: #0c3c60;
   display: flex;
@@ -191,8 +188,8 @@ footer .footer-buttons {
   display: flex;
   flex-direction: column;
 }
-footer .footer-buttons .donate,
-footer .footer-buttons .contact {
+footer .footer-buttons .contact-btn,
+footer .footer-buttons .donate-btn {
   background-color: #20ce88;
   border: none;
   border-radius: 5%;
@@ -201,6 +198,65 @@ footer .footer-buttons .contact {
   height: 30px;
   font-size: 1.5rem;
 }
-footer .footer-buttons .donate {
+footer .footer-buttons .contact-btn:hover,
+footer .footer-buttons .donate-btn:hover {
+  background-color: #d1e0eb;
+}
+footer .footer-buttons .contact-btn a:hover,
+footer .footer-buttons .donate-btn a:hover {
+  color: navy;
+}
+footer .footer-buttons .donate-btn {
   margin-top: 20px;
+}
+.tabs {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tabs .tab-items {
+  width: 100%;
+  padding-top: 10px;
+  border: 2px solid #d1e0eb;
+  height: 350px;
+}
+.tabs .tab-item {
+  display: none;
+}
+.tabs .tab-item-selected {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.tabs .tab-item-selected .tab-text {
+  max-width: 75%;
+  padding-left: 20px;
+}
+.tabs .tab-links {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  background-color: #d1e0eb;
+}
+.tabs .tab-link {
+  padding: 20px 25px;
+  font-size: 2.2rem;
+  background-color: #d1e0eb;
+  border-right: 1px solid white;
+  width: 100%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tab-link:hover {
+  background-color: #d1e0eb;
+}
+.tabs .tab-link-selected {
+  z-index: 2;
+  border-right: 1px solid #d1e0eb;
+  background-color: white;
+  color: black;
+}
+.tabs .tab-link-selected:hover {
+  background-color: white;
 }
