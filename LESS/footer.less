@@ -2,11 +2,39 @@ footer {
   background-color: @footer-bg;
   display: flex;
   justify-content: space-around;
-  padding: 3rem;
+  padding: 2.8rem;
+
+    
+  .footer-links {
+    padding: 8px;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .footer-social {
+    padding: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    flex-direction: column;
+
+    .donate, .contact {
+      background-color: @green;
+      border: none;
+      border-radius: 5%;
+      color: white;
+      width: 90px;
+      height: 30px;
+      font-size: 1.5rem;
+    }
+
+    .donate {
+      margin-top: 20px;
+    }
+  }
+  
 }
 
-.footer-nav {
-  font-size: 1.5rem;
-  color: white;
-}
 
