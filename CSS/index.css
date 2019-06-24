@@ -220,19 +220,18 @@ header {
   padding: 4% 0;
 }
 header .hamburger-icon {
-  font-size: 2rem;
-  flex-grow: 1;
-  text-align: center;
+  align-self: flex-start;
   margin-left: 5%;
+  margin-bottom: 5%;
 }
 header .header-text {
   color: white;
   flex-grow: 1.5;
   text-align: center;
+  margin-left: 16%;
 }
 header .header-text h1 {
   font-size: 4.5rem;
-  margin-right: 6%;
 }
 .header-nav {
   display: flex;
@@ -260,7 +259,7 @@ header .header-text h1 {
 .header-socials .fa {
   border-radius: 50%;
   padding: 5%;
-  margin: 0 2%;
+  margin: 0 3%;
 }
 .header-socials .fa-facebook {
   padding: 5% 6%;
