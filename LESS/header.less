@@ -1,0 +1,76 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    background-color: @header-bg;
+    padding: 4% 0;
+
+    .hamburger-icon {
+        align-self: flex-start;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .header-text {
+        color: white;
+        flex-grow: 1.5;
+        text-align: center;
+        margin-left: 16%;
+
+        h1 {
+            font-size: 4.5rem;
+        }
+    }
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: @header-bg;
+    margin-top: -5%;
+
+    a {
+        padding: 2%;
+        color: white;
+        border-top: 1px solid white;
+        text-align: center;
+    }
+}
+
+.hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.header-socials {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    flex-shrink: 1;
+    margin-right: 4%;
+    
+    .fa {
+        border-radius: 50%;
+        padding: 5%;
+        margin: 0 3%;
+    }
+
+    .fa-facebook {
+        padding: 5% 6%;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .fa-twitter {
+        background-color: #55ACEE;
+        color: white;
+    }
+
+    .fa-instagram {
+        background-color: red;
+        color: white;
+    }
+}

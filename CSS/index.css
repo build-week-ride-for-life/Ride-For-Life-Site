@@ -209,6 +209,71 @@ footer .footer-buttons .donate-btn a:hover {
 footer .footer-buttons .donate-btn {
   margin-top: 20px;
 }
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5%;
+  margin-bottom: 5%;
+  background-color: #0c3c60;
+  padding: 4% 0;
+}
+header .hamburger-icon {
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+header .header-text {
+  color: white;
+  flex-grow: 1.5;
+  text-align: center;
+  margin-left: 16%;
+}
+header .header-text h1 {
+  font-size: 4.5rem;
+}
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c3c60;
+  margin-top: -5%;
+}
+.header-nav a {
+  padding: 2%;
+  color: white;
+  border-top: 1px solid white;
+  text-align: center;
+}
+.hidden {
+  height: 0;
+  overflow: hidden;
+}
+.header-socials {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  flex-shrink: 1;
+  margin-right: 4%;
+}
+.header-socials .fa {
+  border-radius: 50%;
+  padding: 5%;
+  margin: 0 3%;
+}
+.header-socials .fa-facebook {
+  padding: 5% 6%;
+  border: 1px solid white;
+  color: white;
+}
+.header-socials .fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+.header-socials .fa-instagram {
+  background-color: red;
+  color: white;
+}
 .tabs {
   width: 100%;
   margin-top: 20px;
@@ -259,4 +324,8 @@ footer .footer-buttons .donate-btn {
 }
 .tabs .tab-link-selected:hover {
   background-color: white;
+}
+.home h2 {
+  text-align: center;
+  margin: 5% 0;
 }

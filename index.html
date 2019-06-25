@@ -6,9 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="js/index.js" async></script>
   <script src="Components/tabs.js" async></script>
+  <script src="Components/header.js" async></script>
 
 
 
@@ -17,25 +21,31 @@
 <body>
   
 <!--header--> 
-<div class="container">  
-  <header>  
-    <div> 
-      <nav> 
-        nav bar
-      </nav>
-      <div class="socials">
-        <div>Facebook</div>
-        <div>Twitter</div>
-        <div>Instagram</div>
-      </div>
+ 
+  <header>
+    <div class='hamburger-icon'>
+        <a href="#menu" class="menu_icon"><i class="material-icons">dehaze</i></a>
+    </div> 
+    <div class='header-text'>
+        <h1>Ride for Life</h1>
     </div>
-    
-    <h1>Ride for Life</h1>
-  
+    <div class='header-socials'>
+      <a href="#" class="fa fa-facebook fa-lg"></a>
+      <a href="#" class="fa fa-twitter fa-lg"></a>
+      <a href="#" class="fa fa-instagram fa-lg"></a>
+    </div>
   </header>
+  <nav class='hidden header-nav'> 
+      <a href='#' class='menu-item'>Home</a>
+      <a href='#' class='menu-item'>What is Ride For Life?</a>
+      <a href='#' class='menu-item'>How it works</a>
+      <a href='#' class='menu-item'>Contact Us</a>
+    </nav>
+
+  <div class="container home"> 
 
   <!--blurb-->
-  <h2>Sub header</h2>
+  <h2>Protecting the Lives of Mothers and their Children</h2>
   <p>Cat ipsum dolor sit amet, ignore the squirrels, you'll never catch them anyway yet i like big cats and i can not lie for good now the other hand, too pee in human's bed until he cleans the litter box. Hide from vacuum cleaner bite nose of your human purrr purr littel cat, little cat purr purr for proudly present butt to human but poop on couch but cough.</p>
 
   <!--Main-->
