@@ -9,14 +9,30 @@ footer {
     padding: 8px;
     font-size: 1.5rem;
     color: white;
+
+    &:hover {
+      color: @navy;
+      background-color: @light-blue;
+    }
+    &::before {
+      content: "";
+      background: url(../images/logo2.png) no-repeat 0 0;
+      height: 10px;
+    }
   }
 
   .footer-social {
     padding: 8px;
+    &:hover {
+      background-color: @light-blue;
+    }
   }
 
   a {
     font-size: 1.5rem;
+    &:hover {
+      color: @navy;
+    }
   }
 
   .fa-lg::before {
