@@ -138,6 +138,7 @@ body {
 }
 h1 {
   font-size: 4rem;
+  font-weight: 700;
 }
 h2 {
   font-size: 3.2rem;
@@ -235,11 +236,15 @@ header .hamburger-icon {
 header .header-text {
   color: white;
   flex-grow: 1.5;
-  text-align: center;
-  margin-left: 16%;
+  margin-left: 25%;
+  display: flex;
+  align-items: center;
 }
 header .header-text h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
+}
+header .header-text .logo {
+  width: 120px;
 }
 .header-nav {
   display: flex;
@@ -322,7 +327,7 @@ header .header-text h1 {
   cursor: pointer;
 }
 .tabs .tab-link:hover {
-  background-color: #d1e0eb;
+  color: #0c3c60;
 }
 .tabs .tab-link-selected {
   z-index: 2;
