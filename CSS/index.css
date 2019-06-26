@@ -182,7 +182,15 @@ footer .footer-links {
 }
 footer .footer-social {
   padding: 8px;
+}
+footer a {
   font-size: 1.5rem;
+}
+footer .fa-lg::before {
+  margin-right: 20px;
+}
+footer .fa-facebook::before {
+  margin-right: 26px;
 }
 footer .footer-buttons {
   display: flex;
