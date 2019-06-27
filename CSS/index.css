@@ -241,7 +241,7 @@ header {
   margin-top: 1.5%;
   margin-bottom: 5%;
   background-color: #0c3c60;
-  padding: 4% 0;
+  padding: 3% 0;
 }
 header .hamburger-icon {
   align-self: flex-start;
@@ -251,7 +251,7 @@ header .hamburger-icon {
 header .header-text {
   color: white;
   flex-grow: 1.5;
-  margin-left: 25%;
+  margin-left: 30%;
   display: flex;
   align-items: center;
 }
@@ -272,6 +272,7 @@ header .header-text .logo {
   color: white;
   border-top: 1px solid white;
   text-align: center;
+  font-size: 1.7rem;
 }
 .hidden {
   height: 0;
