@@ -406,24 +406,54 @@ header .header-text .logo {
   text-align: center;
   margin: 5% 0;
 }
-.panel-bar {
+.intro {
+  padding-bottom: 20px;
+}
+.intro .intro-wrapper {
+  display: flex;
+  align-items: center;
+}
+.intro .intro-wrapper .intro-text {
+  width: 70%;
+}
+.intro .intro-wrapper .intro-text p {
+  text-align: left;
+}
+.intro .intro-wrapper .intro-img {
+  padding-right: 15px;
+  width: 190px;
+}
+.accordion {
+  padding-bottom: 20px;
+}
+.accordion .panel-bar {
   border: 1px solid #0c3c60;
   margin: 10px 0 10px 0;
   padding: 10px;
   display: flex;
   justify-content: space-between;
 }
-.panel-bar:hover {
+.accordion .panel-bar:hover {
   background-color: #d1e0eb;
 }
-.panel-header:hover {
+.accordion .panel-bar .panel-header:hover {
   cursor: pointer;
 }
 .panel-content {
   display: flex;
+  padding: 15px 0 15px 0;
 }
-.panel-content .panel-img {
-  width: 400px;
+.panel-content .panel-text {
+  width: 70%;
+}
+.panel-content .panel-text p {
+  padding-bottom: 20px;
+}
+.panel-content .panel-text .text-link {
+  border: 2px solid #0c3c60;
+}
+.panel-content .panel-image {
+  width: 200px;
   padding-right: 20px;
 }
 .show {
