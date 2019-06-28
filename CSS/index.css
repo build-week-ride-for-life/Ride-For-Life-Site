@@ -181,7 +181,7 @@ a {
 }
 .intro {
   text-align: center;
-  margin-top: 5%;
+  margin: 5% 0;
 }
 .intro h2 {
   font-size: 4rem;
@@ -190,33 +190,66 @@ a {
   font-size: 2rem;
   margin-top: 2.5%;
 }
-.contactCards {
+.contact-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .info {
-  width: 46%;
-  margin-top: 10%;
+  width: 48%;
+  margin-bottom: 10%;
   text-align: center;
 }
-.info img {
-  width: 95%;
-  height: 350px;
-  margin: 4% 0;
-  box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
+.card-container {
+  width: 80%;
+  height: 400px;
+  margin: 5% auto;
+  text-align: center;
+  perspective: 1000px;
 }
-.info button {
+.card-container .card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+.card-container .card .card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card-container .card .back {
+  color: white;
+  background-color: #0c3c60;
+  transform: rotateY(180deg);
+}
+.card-container .card .back p {
+  margin: 20% 0;
+}
+.card-container .card img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.is-flipped {
+  transform: rotateY(180deg);
+}
+button {
   background-color: #20ce88;
   padding: 3% 3%;
   border: none;
   border-radius: 5%;
   margin-top: 5%;
+  box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
 }
-.info button:hover {
+button:hover {
   background-color: #d1e0eb;
 }
-.info button a:hover {
+button a:hover {
   color: navy;
 }
 footer {
