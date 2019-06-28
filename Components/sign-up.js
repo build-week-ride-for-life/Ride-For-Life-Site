@@ -10,31 +10,20 @@ submitButton.addEventListener('mouseup', (e) =>
 
 submitButton.addEventListener('click', (e) => e.preventDefault());
 
-// Disable submit button if checkbox not checked
+let checkbox = document.getElementById('checkbox');
+if(checkbox.checked === false || input.value === "") {
+  submitButton.onclick = function disabledSubmit() {
+    submitButton.style.backgroundColor = "crimson";
+    document.querySelector('.terms').style.border = "2px solid red";
+  }
+}
+  else {
+    submitButton.onclick = function submit(){
+      submitButton.textContent = "success!";
+    }
+  }
 
-const checkbox = document.querySelector('#checkbox');
-// if(checkbox.checked === false) {
-//   shake();
-// }
 
-// function shake() {
-//   submitButton.disabled = true;
-//   submitButton.addEventListener('click', () => submitButton.classList.add("apply-shake"));
-//   input.addEventListener("animationend", (e) => {
-//   input.classList.remove("apply-shake");
-//   });
-// }
+//  submit button if checkbox not checked & turn button red on click
 
-// checkbox.onchange = function(){
-//   if(this.checked){
-//     submitButton.disabled = false;
-//   } else {
-//     submitButton.disabled = true;  
-//     disabledNotice()
-//     }
-//   }
 
-//   function disabledNotice() {
-//     submitButton.addEventListener('click', () => submitButton.style.background = "red");
-
-//   }
