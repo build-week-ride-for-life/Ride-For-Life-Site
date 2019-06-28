@@ -1,6 +1,6 @@
 .intro {
     text-align: center;
-    margin-top: 5%;
+    margin: 5% 0;
 
     h2 {
         font-size: 4rem;
@@ -12,35 +12,73 @@
     }
 }
 
-.contactCards{
+.contact-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .info {
-    width: 46%;
-    margin-top: 10%;
+    width: 48%;
+    margin-bottom: 10%;
     text-align: center;
+}
 
-    img {
-        width: 95%;
-        height: 350px;
-        margin: 4% 0;
+.card-container {
+    width: 80%;
+    height: 400px;
+    margin: 5% auto;
+    text-align: center;
+    perspective: 1000px;
+
+    .card {
+        width: 100%;
+        height: 100%;
         box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
-    }
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        text-align: center;
 
-    button {
-        background-color: @green;
-        padding: 3% 3%;
-        border: none;
-        border-radius: 5%;
-        margin-top: 5%;
-        &:hover {
-            background-color: @light-blue;
-          }
-        a:hover {
-            color: navy;
-          }
+        .card-face{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            color: white;
+            background-color: @header-bg;
+            transform: rotateY(180deg);
+            p {
+                margin: 20% 0;
+            }
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
     }
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+button {
+    background-color: @green;
+    padding: 3% 3%;
+    border: none;
+    border-radius: 5%;
+    margin-top: 5%;
+    box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
+    &:hover {
+        background-color: @light-blue;
+      }
+    a:hover {
+        color: navy;
+      }
 }
