@@ -161,7 +161,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .container {
     max-width: 90%;
   }
@@ -258,12 +258,12 @@ footer {
   justify-content: space-around;
   padding: 2.8rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   footer {
     flex-direction: column;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   footer .footer-nav {
     padding-bottom: 35px;
   }
@@ -288,7 +288,7 @@ footer .footer-social-list .footer-social {
 footer .footer-social-list .footer-social:hover {
   background-color: #d1e0eb;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   footer .footer-social-list {
     padding-bottom: 25px;
   }
@@ -309,7 +309,7 @@ footer .footer-buttons {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   footer .footer-buttons {
     flex-direction: row;
     align-items: baseline;
@@ -529,9 +529,14 @@ header .header-text .logo {
 .sign-up-form {
   border-radius: 5px;
   display: inline-block;
-  width: 600px;
+  width: 66%;
   background-color: #d1e0eb;
   box-shadow: 10px 10px 5px grey;
+}
+@media (max-width: 650px) {
+  .sign-up-form {
+    width: 100%;
+  }
 }
 .sign-up-form .form-header {
   padding: 40px 0 20px 0;
@@ -545,15 +550,47 @@ header .header-text .logo {
   margin: 0 18px;
   transform: translateY(-1rem);
 }
+@media (max-width: 650px) {
+  .sign-up-form .form-header::before,
+  .sign-up-form .form-header::after {
+    display: none;
+  }
+}
+@media (max-width: 742px) {
+  .sign-up-form .form-header::before,
+  .sign-up-form .form-header::after {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .sign-up-form .form-tag {
+    padding: 30px 30px 0px 30px;
+  }
+}
 .sign-up-form .name {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 650px) {
+  .sign-up-form .name {
+    flex-direction: column;
+  }
+}
 .sign-up-form .name .first-name {
   width: 45%;
 }
+@media (max-width: 650px) {
+  .sign-up-form .name .first-name {
+    width: 100%;
+  }
+}
 .sign-up-form .name .last-name {
   width: 45%;
+}
+@media (max-width: 650px) {
+  .sign-up-form .name .last-name {
+    width: 100%;
+  }
 }
 .sign-up-form .input {
   width: 100%;
@@ -567,6 +604,11 @@ header .header-text .logo {
   display: flex;
   align-items: baseline;
   padding: 20px 0 20px 0;
+}
+@media (max-width: 650px) {
+  .sign-up-form .terms {
+    text-align: left;
+  }
 }
 .sign-up-form .terms .checkbox-wrapper {
   padding-right: 10px;
