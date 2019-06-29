@@ -258,6 +258,16 @@ footer {
   justify-content: space-around;
   padding: 2.8rem;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-nav {
+    padding-bottom: 35px;
+  }
+}
 footer .footer-links {
   padding: 8px;
   font-size: 1.5rem;
@@ -272,11 +282,16 @@ footer .footer-links:before {
   background: url('../images/logo2.png') no-repeat 0 0;
   height: 10px;
 }
-footer .footer-social {
+footer .footer-social-list .footer-social {
   padding: 8px;
 }
-footer .footer-social:hover {
+footer .footer-social-list .footer-social:hover {
   background-color: #d1e0eb;
+}
+@media (max-width: 500px) {
+  footer .footer-social-list {
+    padding-bottom: 25px;
+  }
 }
 footer a {
   font-size: 1.5rem;
@@ -293,6 +308,13 @@ footer .fa-facebook::before {
 footer .footer-buttons {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  footer .footer-buttons {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 footer .footer-buttons .contact-btn,
 footer .footer-buttons .donate-btn {

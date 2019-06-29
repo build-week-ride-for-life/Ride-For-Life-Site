@@ -4,6 +4,16 @@ footer {
   justify-content: space-around;
   padding: 2.8rem;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    @media @mobile {
+      padding-bottom: 35px;
+    }
+  }
+
     
   .footer-links {
     padding: 8px;
@@ -21,12 +31,19 @@ footer {
     }
   }
 
-  .footer-social {
-    padding: 8px;
-    &:hover {
-      background-color: @light-blue;
+  .footer-social-list {
+    .footer-social {
+      padding: 8px;
+      &:hover {
+        background-color: @light-blue;
+      }
     }
+
+    @media @mobile {
+      padding-bottom: 25px;
+    }  
   }
+  
 
   a {
     font-size: 1.5rem;
@@ -46,6 +63,12 @@ footer {
   .footer-buttons {
     display: flex;
     flex-direction: column;
+
+    @media @mobile {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+    }
 
     .contact-btn, .donate-btn {
       background-color: @green;
@@ -67,6 +90,8 @@ footer {
       margin-top: 20px;
     }
   }
+
+  
   
 }
 
