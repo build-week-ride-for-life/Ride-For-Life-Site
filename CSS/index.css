@@ -555,7 +555,7 @@ header .header-text .logo {
 .sign-up-form .terms .terms-text .terms-links {
   text-decoration: underline;
 }
-.sign-up-form button {
+.sign-up-form .submit {
   background-color: #0c3c60;
   color: #d1e0eb;
   font-size: 2.8rem;
@@ -564,6 +564,6 @@ header .header-text .logo {
   box-shadow: 5px 5px 3px grey;
   padding: 20px;
 }
-.sign-up-form button:hover {
+.sign-up-form .submit:hover {
   cursor: pointer;
 }
