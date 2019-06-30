@@ -256,10 +256,20 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .contact-cards {
+    flex-direction: column;
+  }
+}
 .info {
   width: 48%;
   margin-bottom: 10%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .info {
+    width: 100%;
+  }
 }
 .info .contact-button {
   background-color: #20ce88;

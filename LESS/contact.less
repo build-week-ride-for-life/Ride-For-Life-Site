@@ -16,12 +16,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media @mobile {
+        flex-direction: column;
+    }
 }
 
 .info {
     width: 48%;
     margin-bottom: 10%;
     text-align: center;
+
+    @media @mobile {
+        width: 100%;
+    }
 
     .contact-button {
         background-color: @green;
