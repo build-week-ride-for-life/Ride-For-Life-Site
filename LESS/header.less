@@ -6,9 +6,10 @@ header {
     margin-top: 1.5%;
     margin-bottom: 5%;
     background-color: @header-bg;
-    padding: 3% 0;
+    padding: 1% 0;
 
     .hamburger-icon {
+        display: none;
         align-self: flex-start;
         margin-left: 5%;
         margin-bottom: 5%;
@@ -16,10 +17,9 @@ header {
     
     .header-text {
         color: white;
-        flex-grow: 1.5;
-        margin-left: 30%;
         display: flex;
         align-items: center;
+        margin-right: 25%;
 
         h1 {
             font-size: 5rem;
@@ -33,15 +33,21 @@ header {
 
 .header-nav {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     background-color: @header-bg;
     margin-top: -5%;
 
     a {
-        padding: 2%;
+        font-size: 1.5rem;
+        padding: 2% 3%;
         color: white;
         border-top: 1px solid white;
         text-align: center;
+
+        &:hover {
+            background-color: @light-blue;
+            color: black;
+        }
     }
 }
 
@@ -50,32 +56,54 @@ header {
     overflow: hidden;
 }
 
-.header-socials {
+
+.header-styling {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 20%;
-    flex-shrink: 1;
-    margin-right: 4%;
+    justify-items: center;
+    margin-right: 10%;
+    margin-left: -9%;
+
+    .header-socials {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30%;
+        flex-shrink: 1;
+        
+        .fa {
+            border-radius: 50%;
+            padding: 10%;
+            margin: 0 10%;
+        }
+
+        .fa-facebook {
+            color: white;
+        }
+
+        .fa-twitter {
+            color: white;
+        }
+
+        .fa-instagram {
+            color: white;
+        }
+    }
     
-    .fa {
-        border-radius: 50%;
-        padding: 5%;
-        margin: 0 3%;
-    }
-
-    .fa-facebook {
-        padding: 5% 6%;
-        border: 1px solid white;
+    button{
+        margin: 0 auto;
+        background-color: @green;
+        border: none;
+        border-radius: 5%;
         color: white;
-    }
-
-    .fa-twitter {
-        background-color: #55ACEE;
-        color: white;
-    }
-
-    .fa-instagram {
-        background-color: red;
-        color: white;
+        width: 90px;
+        height: 30px;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: @light-blue;
+        }
+        a:hover {
+            color: navy;
+        }
     }
 }

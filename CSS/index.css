@@ -200,6 +200,20 @@ a {
   margin-bottom: 10%;
   text-align: center;
 }
+.info .contact-button {
+  background-color: #20ce88;
+  padding: 3% 3%;
+  border: none;
+  border-radius: 5%;
+  margin-top: 5%;
+  box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
+}
+.info .contact-button:hover {
+  background-color: #d1e0eb;
+}
+.info .contact-button a:hover {
+  color: navy;
+}
 .card-container {
   width: 80%;
   height: 400px;
@@ -237,20 +251,6 @@ a {
 }
 .is-flipped {
   transform: rotateY(180deg);
-}
-button {
-  background-color: #20ce88;
-  padding: 3% 3%;
-  border: none;
-  border-radius: 5%;
-  margin-top: 5%;
-  box-shadow: 0 8px 16px 0 gray, 0 6px 20px 0 gray;
-}
-button:hover {
-  background-color: #d1e0eb;
-}
-button a:hover {
-  color: navy;
 }
 footer {
   background-color: #0c3c60;
@@ -323,19 +323,19 @@ header {
   margin-top: 1.5%;
   margin-bottom: 5%;
   background-color: #0c3c60;
-  padding: 3% 0;
+  padding: 1% 0;
 }
 header .hamburger-icon {
+  display: none;
   align-self: flex-start;
   margin-left: 5%;
   margin-bottom: 5%;
 }
 header .header-text {
   color: white;
-  flex-grow: 1.5;
-  margin-left: 30%;
   display: flex;
   align-items: center;
+  margin-right: 25%;
 }
 header .header-text h1 {
   font-size: 5rem;
@@ -345,44 +345,68 @@ header .header-text .logo {
 }
 .header-nav {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: #0c3c60;
   margin-top: -5%;
 }
 .header-nav a {
-  padding: 2%;
+  font-size: 1.5rem;
+  padding: 2% 3%;
   color: white;
   border-top: 1px solid white;
   text-align: center;
+}
+.header-nav a:hover {
+  background-color: #d1e0eb;
+  color: black;
 }
 .hidden {
   height: 0;
   overflow: hidden;
 }
-.header-socials {
+.header-styling {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-right: 10%;
+  margin-left: -9%;
+}
+.header-styling .header-socials {
   display: flex;
   justify-content: center;
-  width: 20%;
+  margin-bottom: 30%;
   flex-shrink: 1;
-  margin-right: 4%;
 }
-.header-socials .fa {
+.header-styling .header-socials .fa {
   border-radius: 50%;
-  padding: 5%;
-  margin: 0 3%;
+  padding: 10%;
+  margin: 0 10%;
 }
-.header-socials .fa-facebook {
-  padding: 5% 6%;
-  border: 1px solid white;
+.header-styling .header-socials .fa-facebook {
   color: white;
 }
-.header-socials .fa-twitter {
-  background-color: #55ACEE;
+.header-styling .header-socials .fa-twitter {
   color: white;
 }
-.header-socials .fa-instagram {
-  background-color: red;
+.header-styling .header-socials .fa-instagram {
   color: white;
+}
+.header-styling button {
+  margin: 0 auto;
+  background-color: #20ce88;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  width: 90px;
+  height: 30px;
+  font-size: 1.5rem;
+}
+.header-styling button:hover {
+  background-color: #d1e0eb;
+}
+.header-styling button a:hover {
+  color: navy;
 }
 .tabs {
   width: 100%;
