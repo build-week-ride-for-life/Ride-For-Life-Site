@@ -10,9 +10,13 @@
 .sign-up-form {
   border-radius: 5px;
   display: inline-block;
-  width: 600px;
+  width: 66%;
   background-color: @light-blue;
   box-shadow: 10px 10px 5px grey;
+
+  @media @mobile {
+    width: 100%;
+  }
 
   .form-header {
     padding: 40px 0 20px 0;
@@ -24,16 +28,41 @@
       margin: 0 18px;
       transform: translateY(-1rem);
     }
-  
+    @media @mobile {
+      &::before, &::after {
+        display: none;
+      }
+    }
+    @media (max-width:742px) {
+      &::before, &::after {
+        display: none;
+      }
+    }
+  }
+
+  .form-tag{
+    @media @mobile {
+      padding: 30px 30px 0px 30px;
+    }
   }
   .name {
     display: flex; 
     justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+    }
     .first-name {
       width: 45%;
+      @media @mobile {
+        width: 100%;
+      }
     }
     .last-name {
       width: 45%;
+      @media @mobile {
+        width: 100%;
+      }
     }
     
   }
@@ -49,6 +78,10 @@
     display: flex;
     align-items: baseline;
     padding: 20px 0 20px 0;
+
+    @media @mobile {
+      text-align: left;
+    }
     .checkbox-wrapper {
       padding-right: 10px;
     }
