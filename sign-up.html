@@ -11,9 +11,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="Components/header.js" async></script>
-  <script src="Components/accordion.js" async></script>
+  <script src="Components/sign-up.js" async></script>
 
-  <title>Ride for Life - How it works</title>
+
+  <title>Ride for Life - Sign up</title>
 </head>
 <body>
   
@@ -40,50 +41,40 @@
       <a href='#' class='menu-item'>Contact Us</a>
   </nav>
   <main class="container">
-    <div class="intro">
-      <h2>How it works</h2>
-      <div class="intro-wrapper">
-        <div class="intro-image">
-          <img class="intro-img" src="images/sitting-women.webp">
+    <div class="form-wrapper">
+      <form class="sign-up-form">
+      <h3 class="form-header">Register</h3>
+      <p>Create your account. It's free and only takes a minute.</p>
+      <div class="inner-wrapper">
+        <div class="name">
+          <div class="first-name">
+            <input class="input name-input" type="text" placeholder="First name" autocomplete="off">
+          </div>
+          <div class="last-name">
+            <input class="input name-input" type="text" placeholder="Last name" autocomplete="off">
+          </div>
         </div>
-        <div class="intro-text">
-        <p>Howl on top of tall thing cat walks in keyboard intently sniff hand. Attack the child toilet paper attack claws fluff everywhere meow miao french ciao litterbox groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked touch my tail, i shred your hand purrrr, leave hair on owner's clothes so why must they do that, yet throwup on your pillow. You are a captive audience while sitting on the toilet, pet me kitty loves pigs then cats take over the world.</p>
+        <div class="email">
+          <input class="input" type="email" placeholder="Email" autocomplete="off">
         </div>
+        <div class="password">
+          <input class="input" type="password" placeholder="Password">
+        </div>
+        <div class="confirm-password">
+          <input class="input" type="password" placeholder="Confirm password">
+        </div>
+        <div class="terms">
+          <div class="checkbox-wrapper">
+              <input id="checkbox" autocomplete="off" type="checkbox">
+          </div>
+          <div class="terms-wrapper">
+            <p class="terms-text">I accept the <a class="terms-links" href="#">Terms of Use</a> and <a class="terms-links" href="#">Privacy Policy</a></p>
+          </div>
+        </div>
+        <button class="submit">Submit</button>
       </div>
-    </div>  
-    <div class="accordion">
-      <div class="panel">
-        <div class="panel-bar">
-          <h3 class="panel-header">I am a driver</h3>
-          <button class="panel-btn hide">Close</button>
-        </div>
-        <div class="panel-content hide">
-          <div class="panel-image">
-            <img class="panel-img" src="images/ambulance.jpg">
-          </div>
-          <div class="panel-text">
-            <p>Howl on top of tall thing cat walks in keyboard intently sniff hand. Attack the child toilet paper attack claws fluff everywhere meow miao french ciao litterbox groom yourself 4 hours. i shred your hand purrrr, leave hair on owner's clothes so why must they do that, yet throwup on your pillow. You are a captive audience while sitting on the toilet, pet me kitty loves pigs then cats take over the world.</p>
-            <a class="text-link" href="#">Sign up</a>
-            
-          </div>
-        </div>
-      </div> 
-      <div class="panel"> 
-        <div class="panel-bar">
-          <h3 class="panel-header">I am an expectant mother</h3>
-          <button class="panel-btn hide">Close</button>
-        </div>
-        <div class="panel-content hide">
-          <div class="panel-image">
-              <img class="panel-img" src="images/mother.jpg">
-          </div>
-          <div class="panel-text">
-            <p>Howl on top of tall thing cat walks in keyboard intently sniff hand. Attack the child toilet paper attack claws fluff everywhere meow miao french ciao litterbox groom yourself 4 hours. i shred your hand purrrr, leave hair on owner's clothes so why must they do that, yet throwup on your pillow. You are a captive audience while sitting on the toilet, pet me kitty loves pigs then cats take over the world.</p>
-            <a class="text-link" href="#">Sign up</a>
-          </div>
-        </div>
-      </div>  
-    </div>  
+      </form>
+    </div>
   </main>
   <footer>
       <nav class="footer-nav">
