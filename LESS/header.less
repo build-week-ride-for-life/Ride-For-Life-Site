@@ -4,15 +4,15 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 1.5%;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
     background-color: @header-bg;
     padding: 1% 0;
 
-    .hamburger-icon {
-        display: none;
-        align-self: flex-start;
-        margin-left: 5%;
-        margin-bottom: 5%;
+    @media @mobile {
+        padding-bottom: 15%;
+        margin-bottom: 15%;
+        padding-top: 3%;
+        flex-direction: column;
     }
     
     .header-text {
@@ -20,42 +20,85 @@ header {
         display: flex;
         align-items: center;
         margin-right: 25%;
+        margin-left: 4%;
+
+        @media @mobile {
+            margin: 0 auto;
+        }
 
         h1 {
             font-size: 5rem;
+
+            @media @tablet {
+                text-align: center;
+            }
         }
 
         .logo {
             width: 120px;
+
+            @media @mobile {
+                display: none;
+            }
         }
     }
 }
 
-.header-nav {
-    display: flex;
-    justify-content: center;
+.nav-container {
     background-color: @header-bg;
-    margin-top: -5%;
 
-    a {
-        font-size: 1.5rem;
-        padding: 2% 3%;
-        color: white;
+    .hamburger-icon {
+        display: none;
+
+        @media @mobile {
+            display: block;
+            margin-top: -22%;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        background-color: @header-bg;
         border-top: 1px solid white;
-        text-align: center;
 
-        &:hover {
-            background-color: @light-blue;
-            color: black;
+        @media @mobile {
+            border: none;
+            flex-direction: column;
+            margin-top: 0;
+        }
+
+        .item-1 {
+            @media @mobile {
+            }
+        }
+
+        a {
+            font-size: 1.5rem;
+            padding: 2% 3%;
+            color: white;
+            text-align: center;
+
+            @media @mobile {
+                padding: 4% 3%;
+            }
+
+            &:hover {
+                background-color: @light-blue;
+                color: black;
+            }
         }
     }
 }
 
 .hidden {
-    height: 0;
-    overflow: hidden;
+    @media @mobile {
+        height: 0;
+        overflow: hidden;
+    }
 }
-
 
 .header-styling {
     display: flex;
@@ -64,6 +107,11 @@ header {
     justify-items: center;
     margin-right: 7%;
     margin-left: -9%;
+
+    @media @mobile {
+        margin: 0 auto;
+        margin-top: 5%;
+    }
 
     .header-socials {
         display: flex;
