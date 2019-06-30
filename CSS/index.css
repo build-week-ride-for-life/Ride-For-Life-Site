@@ -355,7 +355,6 @@ header .header-text .logo {
   color: white;
   border-top: 1px solid white;
   text-align: center;
-  font-size: 1.7rem;
 }
 .header-nav a:hover {
   background-color: #d1e0eb;
@@ -370,7 +369,7 @@ header .header-text .logo {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  margin-right: 10%;
+  margin-right: 7%;
   margin-left: -9%;
 }
 .header-styling .header-socials {
@@ -393,7 +392,7 @@ header .header-text .logo {
 .header-styling .header-socials .fa-instagram {
   color: white;
 }
-.header-styling button {
+.header-styling .support-button {
   margin: 0 auto;
   background-color: #20ce88;
   border: none;
@@ -403,11 +402,9 @@ header .header-text .logo {
   height: 30px;
   font-size: 1.5rem;
 }
-.header-styling button:hover {
+.header-styling .support-button:hover {
   background-color: #d1e0eb;
-}
-.header-styling button a:hover {
-  color: navy;
+  color: black;
 }
 .tabs {
   width: 100%;
