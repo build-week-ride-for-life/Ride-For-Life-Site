@@ -559,7 +559,7 @@ header .header-text .logo {
   width: 100%;
   padding-top: 10px;
   border: 2px solid #d1e0eb;
-  height: 350px;
+  min-height: 400px;
 }
 .tabs .tab-item {
   display: none;
@@ -569,9 +569,24 @@ header .header-text .logo {
   justify-content: space-around;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .tabs .tab-item-selected {
+    display: block;
+  }
+}
 .tabs .tab-item-selected .tab-text {
   max-width: 75%;
   padding-left: 20px;
+}
+@media (max-width: 500px) {
+  .tabs .tab-item-selected .tab-text {
+    min-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs .tab-item-selected .ride-img {
+    display: none;
+  }
 }
 .tabs .tab-links {
   display: flex;
@@ -591,6 +606,12 @@ header .header-text .logo {
 }
 .tabs .tab-link:hover {
   color: #0c3c60;
+}
+@media (max-width: 500px) {
+  .tabs .tab-link {
+    font-size: 2rem;
+    padding: 20px 0 0 0;
+  }
 }
 .tabs .tab-link-selected {
   z-index: 2;
@@ -741,7 +762,7 @@ header .header-text .logo {
     display: none;
   }
 }
-@media (max-width: 742px) {
+@media (max-width: 773px) {
   .sign-up-form .form-header::before,
   .sign-up-form .form-header::after {
     display: none;
