@@ -1,7 +1,7 @@
 const submitButton = document.querySelector('.sign-up-form button');
-
-// Submit button prevent default behavior
-submitButton.addEventListener('click', e => e.preventDefault());
+const input = document.querySelector('.input');
+let inputArray = Array.from(input);
+const checkbox = document.getElementById('checkbox');
 
 // Submit button shadow disappears on mousedown
 submitButton.addEventListener(
@@ -15,17 +15,24 @@ submitButton.addEventListener(
 );
 
 // Submit button turns red if checkbox unchecked or input fields empty, otherwise the text of the submit button changes to "success!"
-// let checkbox = document.getElementById('checkbox');
+submitButton.addEventListener('click', buttonHandler);
 
-// if (checkbox.checked === false || input.value === '') {
-//   submitButton.onclick = function disabledSubmit() {
-//     submitButton.style.backgroundColor = 'crimson';
-//     document.querySelector('.terms').style.border = '2px solid red';
-//   };
-// } else if (checkbox.checked === true && input.value.length > 0) {
-//   submitButton.onclick = function submit(e) {
-//     submitButton.style.backgroundColor = '@navy';
-//     submitButton.textContent = 'success!';
-//     e.preventDefault();
-//   };
-// }
+function buttonHandler(e) {
+  e.preventDefault();
+  if (!checkbox.checked || !checkInputFields) {
+    submitButton.style.backgroundColor = 'crimson';
+  } else if (checkbox.checked && checkForFilledInputFields) {
+    submitButton.style.backgroundColor = '@navy';
+    submitButton.textContent = 'Thank you!';
+  }
+}
+
+// returns true if at least one input fields are empty
+const checkForEmptyInputFields = inputArray.some(function(element) {
+  return element.value === '';
+});
+
+// returns true if all input fields are filled
+let checkForFilledInputFields = inputArray.every(function(element) {
+  return element.value.length > 0;
+});
