@@ -348,11 +348,6 @@ footer .footer-links:hover {
   color: #0c3c60;
   background-color: #d1e0eb;
 }
-footer .footer-links:before {
-  content: "";
-  background: url('../images/logo2.png') no-repeat 0 0;
-  height: 10px;
-}
 footer .footer-social-list .footer-social {
   padding: 8px;
 }
